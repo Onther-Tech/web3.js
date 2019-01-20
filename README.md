@@ -25,9 +25,10 @@ console.log(rootchain) // "0x880ec53af800b5cd051531672ef4fc4de233bd5d"
 Get the address of requestable contract in child chain.
 
 ##### Parameters
-1. `String` - THe requestable contract address to query.
+1. `String` - The requestable contract address to query.
 
 ##### Examples
 ```javascript
-`web3.eth.getRequestableContract(requestableContractInRootChain)`
+var addr = web3.eth.getRequestableContract("0x880ec53af800b5cd051531672ef4fc4de233bd5d")
+console.log(addr) // "0x0000000000000000000000000000000000000000"
 ```
